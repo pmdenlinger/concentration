@@ -33,24 +33,24 @@ struct ContentView: View {
 }
     
     var remove: some View {
-        Button(action: {
+        Button {
                 if emojiCount > 1 {
                 emojiCount -= 1
             }
-        }, label: {
+        } label: {
             Image(systemName:"minus.circle")
-        })
+        }
         
     }
     
     var add: some View {
-        Button(action: {
+        Button {
             if emojiCount < emojis.count {
             emojiCount += 1
             }
-        }, label: {
+        } label: {
             Image(systemName:"plus.circle")
-    })
+    }
     }
 
 struct CardView: View {
