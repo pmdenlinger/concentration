@@ -29,17 +29,12 @@ struct CardView: View {
         ZStack {
             let shape = RoundedRectangle(cornerRadius: 20)
             if isFaceUp {
-                shape
-                    .fill()
-                    .foregroundColor(.white)
-                shape
-                    .stroke(lineWidth: 3)
-                Text("✈️")
-                    .font(.largeTitle)
+                shape.fill().foregroundColor(.white)
+                shape.stroke(lineWidth: 3)
+                Text("✈️").font(.largeTitle)
             }
             else {
-                shape
-                    .fill()
+                shape.fill()
             }
                 
         }
