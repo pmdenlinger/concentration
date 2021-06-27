@@ -13,23 +13,21 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                ForEach(emojis[0..<emojiCount], id: \.self)  { emoji in
-                    CardView(content: emoji)
+                LazyVGrid(columns: [GridItem(),GridItem(),GridItem()]) { ForEach(emojis[0..<emojiCount], id: \.self)  { emoji in
+                        CardView(content: emoji)
                 }
-            }
+                .foregroundColor(.red)
+            Spacer()
             HStack {
-                
-           remove
-           Spacer()
-           add
-            
-        }
+               remove
+               Spacer()
+               add
+            }
             .font(.largeTitle)
             .padding(.horizontal)
     }
     .padding(.horizontal)
-    .foregroundColor(.red)
+    
 }
     
     var remove: some View {
@@ -84,5 +82,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
             .preferredColorScheme(.dark)
     }
+}
 }
 }
