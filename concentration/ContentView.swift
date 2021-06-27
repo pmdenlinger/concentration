@@ -9,16 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        HStack {
+            CardView()
+            CardView()
+            CardView()
+            CardView()
+    }
+    .padding(.horizontal)
+    .foregroundColor(.red)
         
-        ZStack{
+    }
+}
+
+struct CardView: View {
+    var body: some View {
+        ZStack {
             RoundedRectangle(cornerRadius: 25.0)
                 .stroke(lineWidth: 3)
             Text("Hello World")
-                .foregroundColor(.orange)
+                
         }
-        .padding(.horizontal)
-        .foregroundColor(.red)
-        
     }
 }
 
