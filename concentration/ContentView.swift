@@ -13,12 +13,13 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            ScrollView {
             LazyVGrid(columns: [GridItem(), GridItem(), GridItem()]) {
                 ForEach(emojis[0..<emojiCount], id: \.self)  { emoji in
-                    CardView(content: emoji)
-                    
-                    }
+                    CardView(content: emoji).aspectRatio(2/3, contentMode: .fit)
                 }
+            }
+        }
                 .foregroundColor(.red)
                 Spacer()
                 HStack {
