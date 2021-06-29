@@ -15,6 +15,12 @@ struct ConcentrationGame<CardContent> {
         
     }
     
+    init(numberOfPairsOfCards: Int) {
+        cards = Array<Card>()
+//            add number of pairs of cards * 2 cards to card array
+        
+    }
+    
     struct Card {
         var isFaceUp: Bool
         var isMatched: Bool
