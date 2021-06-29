@@ -11,11 +11,17 @@ import SwiftUI
 
 class EmojiConcentrationGame {
     
-    var emojis = ["🚀", "🚂", "✈️", "🚚", "🚴🏽‍♂️", "🛸", "🛩", "🚁", "🚓", "🛻", "🏎", "🛺", "🚢", "🚎", "🚠", "🚈", "🛰", "🛶", "🚤", "🛳", "🛴", "🛵", "🦼", "🚜"]
+    static let emojis = ["🚀", "🚂", "✈️", "🚚", "🚴🏽‍♂️", "🛸", "🛩", "🚁", "🚓", "🛻", "🏎", "🛺", "🚢", "🚎", "🚠", "🚈", "🛰", "🛶", "🚤", "🛳", "🛴", "🛵", "🦼", "🚜"]
     
-    private var model: ConcentrationGame<String> = ConcentrationGame<String>(numberOfPairsOfCards: 4)  { pairIndex in "😃" }
+    static func createConcentrationGame() -> ConcentrationGame<String> {
+        ConcentrationGame<String>(numberOfPairsOfCards: 4) { pairIndex in
+            emojis[pairIndex]
+        }
+    }
     
-    var cards: Array<ConcentrationGame<String>.Card> {
-        return model.cards
+        private var model: ConcentrationGame<String> = createConcentrationGame()
+        
+        var cards: Array<ConcentrationGame<String>.Card> {
+            return model.cards
     }
 }
