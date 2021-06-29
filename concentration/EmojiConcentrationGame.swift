@@ -6,3 +6,7 @@
 //
 
 import SwiftUI
+
+class EmojiConcentrationGame {
+    private var model: ConcentrationGame<String>
+}
