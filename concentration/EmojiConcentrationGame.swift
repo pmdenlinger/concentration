@@ -7,10 +7,15 @@
 
 import SwiftUI
 
-func makeCardContent(index: Int) -> String {
-    return "😃"
-}
+
 
 class EmojiConcentrationGame {
-    private var model: ConcentrationGame<String> = ConcentrationGame<String>(numberOfPairsOfCards: 4, createCardContent: makeCardContent)
+    
+    var emojis = ["🚀", "🚂", "✈️", "🚚", "🚴🏽‍♂️", "🛸", "🛩", "🚁", "🚓", "🛻", "🏎", "🛺", "🚢", "🚎", "🚠", "🚈", "🛰", "🛶", "🚤", "🛳", "🛴", "🛵", "🦼", "🚜"]
+    
+    private var model: ConcentrationGame<String> = ConcentrationGame<String>(numberOfPairsOfCards: 4)  { pairIndex in "😃" }
+    
+    var cards: Array<ConcentrationGame<String>.Card> {
+        return model.cards
+    }
 }
