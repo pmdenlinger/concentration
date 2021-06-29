@@ -11,6 +11,7 @@
 		CE24F4B22688CDB300FA1519 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE24F4B12688CDB300FA1519 /* ContentView.swift */; };
 		CE24F4B42688CDB500FA1519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE24F4B32688CDB500FA1519 /* Assets.xcassets */; };
 		CE24F4B72688CDB500FA1519 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE24F4B62688CDB500FA1519 /* Preview Assets.xcassets */; };
+		CEE17CDB268AAAA9004D1C6C /* ConcentrationGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE17CDA268AAAA9004D1C6C /* ConcentrationGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		CE24F4B32688CDB500FA1519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE24F4B62688CDB500FA1519 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CE24F4B82688CDB500FA1519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEE17CDA268AAAA9004D1C6C /* ConcentrationGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				CE24F4AF2688CDB300FA1519 /* concentrationApp.swift */,
 				CE24F4B12688CDB300FA1519 /* ContentView.swift */,
+				CEE17CDA268AAAA9004D1C6C /* ConcentrationGame.swift */,
 				CE24F4B32688CDB500FA1519 /* Assets.xcassets */,
 				CE24F4B82688CDB500FA1519 /* Info.plist */,
 				CE24F4B52688CDB500FA1519 /* Preview Content */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE17CDB268AAAA9004D1C6C /* ConcentrationGame.swift in Sources */,
 				CE24F4B22688CDB300FA1519 /* ContentView.swift in Sources */,
 				CE24F4B02688CDB300FA1519 /* concentrationApp.swift in Sources */,
 			);
