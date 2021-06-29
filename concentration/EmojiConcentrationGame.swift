@@ -8,5 +8,5 @@
 import SwiftUI
 
 class EmojiConcentrationGame {
-    private var model: ConcentrationGame<String>
+    private var model: ConcentrationGame<String> = ConcentrationGame<String>(numberOfPairsOfCards: 4)
 }
