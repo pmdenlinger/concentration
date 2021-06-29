@@ -24,9 +24,7 @@ struct ContentView: View {
                 Spacer()
                 HStack {
                 
-           remove
-           Spacer()
-           add
+           
             
         }
             .font(.largeTitle)
@@ -36,26 +34,7 @@ struct ContentView: View {
     
 }
     
-    var remove: some View {
-        Button(action: {
-                if emojiCount > 1 {
-                emojiCount -= 1
-            }
-        }, label: {
-            Image(systemName:"minus.circle")
-        })
-        
-    }
     
-    var add: some View {
-        Button(action: {
-            if emojiCount < emojis.count {
-            emojiCount += 1
-            }
-        }, label: {
-            Image(systemName:"plus.circle")
-    })
-}
 
 struct CardView: View {
     var content: String
